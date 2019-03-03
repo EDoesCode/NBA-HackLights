@@ -1,0 +1,310 @@
+1551609451679	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.gg3n0MpsuzBO"
+*** You are running in headless mode.
+1551609451981	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1551609451981	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1551609452901	Marionette	INFO	Listening on port 45567
+1551609452984	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:188:13
+
+1551609514884	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.whFlKs3ZQTEP"
+*** You are running in headless mode.
+1551609515168	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1551609515168	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1551609516053	Marionette	INFO	Listening on port 38137
+1551609516091	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://turnip.cdn.turner.com/top/core/1.3.2/default/top.sdk.min.js, line 1: unreachable code after return statement
+JavaScript error: https://static.adsafeprotected.com/sca.17.4.95.js, line 33: TypeError: The ReadableStream reader was released.
+JavaScript warning: http://turnip.cdn.turner.com/top/core/1.3.2/default/top.sdk.min.js, line 1: unreachable code after return statement
+1551609541708	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ONhXUglpXJeH"
+*** You are running in headless mode.
+1551609542002	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1551609542002	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1551609542870	Marionette	INFO	Listening on port 46133
+1551609542911	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://turnip.cdn.turner.com/top/core/1.3.2/default/top.sdk.min.js, line 1: unreachable code after return statement
+JavaScript error: https://static.adsafeprotected.com/sca.17.4.95.js, line 33: TypeError: The ReadableStream reader was released.
+JavaScript error: https://s0.2mdn.net/9146105/1550267301940/300x250-pfister-faucet-restoread/logic.js, line 12: ReferenceError: Enabler is not defined
+JavaScript warning: http://turnip.cdn.turner.com/top/core/1.3.2/default/top.sdk.min.js, line 1: unreachable code after return statement
+1551609551718	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:196:64
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:188:13
+
+1551609582132	Marionette	INFO	Stopped listening on port 46133
+[Child 17951, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 349
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1551609807690	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.2gMq2Kz5PhOr"
+*** You are running in headless mode.
+1551609807965	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1551609807965	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1551609808815	Marionette	INFO	Listening on port 38843
+1551609808899	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://d2lv4zbk7v5f93.cloudfront.net/esf.js, line 1: Error: invalid option: 'msg' valid keys are: '["hasBeenRead","has_been_read","accountId","clientId","cmd","debug","beacon","bootstrap","detection","dfp","events","rid","siteCssLocation","disableBlockerStyleSheets","styleManager","vid","runImmediately"]'
+JavaScript warning: http://turnip.cdn.turner.com/top/core/1.3.2/default/top.sdk.min.js, line 1: unreachable code after return statement
+JavaScript warning: http://turnip.cdn.turner.com/top/core/1.3.2/default/top.sdk.min.js, line 1: unreachable code after return statement
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:188:13
+
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 12392, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 349
+Exiting due to channel error.
+[Child 12324, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 349
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 1581, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 349
+[Child 1546, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 349
+Exiting due to channel error.
+Exiting due to channel error.
+1551609949847	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.3NvDbKKgvhir"
+*** You are running in headless mode.
+1551609950141	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1551609950141	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1551609951007	Marionette	INFO	Listening on port 37875
+1551609951051	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://turnip.cdn.turner.com/top/core/1.3.2/default/top.sdk.min.js, line 1: unreachable code after return statement
+JavaScript warning: http://turnip.cdn.turner.com/top/core/1.3.2/default/top.sdk.min.js, line 1: unreachable code after return statement
+JavaScript error: https://fw.adsafeprotected.com/rjss/www.googletagservices.com/235310/32589717/dcm/dcmads.js, line 872: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://static.adsafeprotected.com/sca.17.4.95.js, line 33: TypeError: The ReadableStream reader was released.
+JavaScript warning: https://cdn.flashtalking.com/frameworks/js/api/2/10/html5API.js, line 3: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.flashtalking.com/frameworks/js/api/2/10/html5API.js, line 3: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:188:13
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 9682, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 718
+[Child 9888, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 718
+[Child 9888, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 718
+[Child 9888, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 718
+[Child 9888, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 718
+[Child 9888, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 718
+[Child 9888, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 718
+[Child 9888, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 718
+1551610026226	Marionette	INFO	Stopped listening on port 37875
+[Parent 9682, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 718
+1551610039921	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ea6o9ZiffgoV"
+*** You are running in headless mode.
+1551610040200	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1551610040200	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1551610041082	Marionette	INFO	Listening on port 39885
+1551610041125	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://turnip.cdn.turner.com/top/core/1.3.2/default/top.sdk.min.js, line 1: unreachable code after return statement
+JavaScript error: http://d2lv4zbk7v5f93.cloudfront.net/esf.js, line 1: Error: invalid option: 'msg' valid keys are: '["hasBeenRead","has_been_read","accountId","clientId","cmd","debug","beacon","bootstrap","detection","dfp","events","rid","siteCssLocation","disableBlockerStyleSheets","styleManager","vid","runImmediately"]'
+JavaScript warning: http://turnip.cdn.turner.com/top/core/1.3.2/default/top.sdk.min.js, line 1: unreachable code after return statement
+JavaScript error: http://static.adsafeprotected.com/sca.17.4.95.js, line 33: TypeError: The ReadableStream reader was released.
+1551610046946	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:196:64
+JavaScript error: https://s0.2mdn.net/2276943/1505410449413/Constant%20Negotiation_300x250/Constant%20Negotiation_300x250/Constant%20Negotiation_300x250.js?1504895109463, line 358: TypeError: this.img3 is undefined
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:188:13
+
+1551610078093	Marionette	INFO	Stopped listening on port 39885
+1551610557759	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.KDxjjV1kgQsL"
+*** You are running in headless mode.
+1551610558049	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1551610558049	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1551610558930	Marionette	INFO	Listening on port 45857
+1551610558968	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://turnip.cdn.turner.com/top/core/1.3.2/default/top.sdk.min.js, line 1: unreachable code after return statement
+JavaScript error: http://d2lv4zbk7v5f93.cloudfront.net/esf.js, line 1: Error: invalid option: 'msg' valid keys are: '["hasBeenRead","has_been_read","accountId","clientId","cmd","debug","beacon","bootstrap","detection","dfp","events","rid","siteCssLocation","disableBlockerStyleSheets","styleManager","vid","runImmediately"]'
+JavaScript warning: http://turnip.cdn.turner.com/top/core/1.3.2/default/top.sdk.min.js, line 1: unreachable code after return statement
+JavaScript error: https://static.adsafeprotected.com/sca.17.4.95.js, line 33: TypeError: The ReadableStream reader was released.
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:188:13
+
+1551610680291	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.xkO4eSXaAvrk"
+*** You are running in headless mode.
+1551610680592	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1551610680593	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1551610681547	Marionette	INFO	Listening on port 34061
+1551610681595	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://turnip.cdn.turner.com/top/core/1.3.2/default/top.sdk.min.js, line 1: unreachable code after return statement
+JavaScript warning: http://turnip.cdn.turner.com/top/core/1.3.2/default/top.sdk.min.js, line 1: unreachable code after return statement
+1551610688312	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:196:64
+JavaScript error: http://static.adsafeprotected.com/sca.17.4.95.js, line 33: TypeError: The ReadableStream reader was released.
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:188:13
+
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1551610784573	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Heqz2UO1hKSX"
+*** You are running in headless mode.
+1551610784866	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1551610784866	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1551610785741	Marionette	INFO	Listening on port 33909
+1551610785780	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://turnip.cdn.turner.com/top/core/1.3.2/default/top.sdk.min.js, line 1: unreachable code after return statement
+JavaScript error: https://static.adsafeprotected.com/sca.17.4.95.js, line 33: TypeError: The ReadableStream reader was released.
+JavaScript warning: http://turnip.cdn.turner.com/top/core/1.3.2/default/top.sdk.min.js, line 1: unreachable code after return statement
+1551610792387	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:196:64
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:188:13
+
+1551610823531	Marionette	INFO	Stopped listening on port 33909
+JavaScript warning: https://s.yimg.com/rq/iv/inside.js, line 1: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s.yimg.com/rq/iv/inside.js, line 1: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s.yimg.com/rq/iv/inside.js, line 1: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://s.yimg.com/rq/iv/inside.js, line 1: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5F0029,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+[Child 25300, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 349
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1551610838370	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.F0FqJvwcmVUQ"
+*** You are running in headless mode.
+1551610838653	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1551610838654	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1551610839526	Marionette	INFO	Listening on port 35257
+1551610839573	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://turnip.cdn.turner.com/top/core/1.3.2/default/top.sdk.min.js, line 1: unreachable code after return statement
+JavaScript warning: http://turnip.cdn.turner.com/top/core/1.3.2/default/top.sdk.min.js, line 1: unreachable code after return statement
+JavaScript error: https://static.adsafeprotected.com/sca.17.4.95.js, line 33: TypeError: The ReadableStream reader was released.
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:188:13
+
+1551610876804	Marionette	INFO	Stopped listening on port 35257
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Child 28471, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 349
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1551610947860	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.IxrnGHXDF8lZ"
+*** You are running in headless mode.
+1551610948141	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1551610948141	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1551610949020	Marionette	INFO	Listening on port 36847
+1551610949064	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://d2lv4zbk7v5f93.cloudfront.net/esf.js, line 1: Error: invalid option: 'msg' valid keys are: '["hasBeenRead","has_been_read","accountId","clientId","cmd","debug","beacon","bootstrap","detection","dfp","events","rid","siteCssLocation","disableBlockerStyleSheets","styleManager","vid","runImmediately"]'
+JavaScript warning: http://turnip.cdn.turner.com/top/core/1.3.2/default/top.sdk.min.js, line 1: unreachable code after return statement
+JavaScript error: https://static.adsafeprotected.com/sca.17.4.95.js, line 33: TypeError: The ReadableStream reader was released.
+JavaScript warning: http://turnip.cdn.turner.com/top/core/1.3.2/default/top.sdk.min.js, line 1: unreachable code after return statement
+JavaScript error: https://fw.adsafeprotected.com/rjss/www.googletagservices.com/243617/33351690/dcm/dcmads.js, line 872: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://static.adsafeprotected.com/main.17.4.169.js, line 113: NS_ERROR_NOT_INITIALIZED: 
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:188:13
+
+1551610996184	Marionette	INFO	Stopped listening on port 36847
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Child 2285, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 349
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
