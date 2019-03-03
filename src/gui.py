@@ -4,6 +4,7 @@ import re
 from ttkcalendar import Calendar
 import os
 import time
+import random
 from multiprocessing import Process
 
 class GameID:
@@ -156,7 +157,10 @@ class NBAVideoApp(Frame):
         urlFile = open('./../backend/urls.txt', 'r')
         os.chdir('./../')
         for line in urlFile:
-            os.system('python3 ./backend/addressresolution.py ' + line)
+            name = ''
+        for i in range(20):
+            name = random.choice(['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'])
+            os.system('python3 ./backend/addressresolution.py ' + line + ' ' + name)
 
         urlFile.close()
 
