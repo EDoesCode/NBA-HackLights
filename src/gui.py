@@ -158,6 +158,7 @@ class NBAVideoApp(Frame):
         os.chdir('./../')
         i = 1
         for line in urlFile:
+            line = line.replace('\n', '')
             name = 'output'
             name += str(i)
             i += 1
