@@ -111,7 +111,22 @@ class NBAVideoApp(Frame):
         self.refreshButton = Button(self.outputFrame, text='Refresh', command=self.updateOutput)
         self.refreshButton.pack(side='left', ipady=40, padx=5)
 
+        self.mergeButton = Button(self.outputFrame, text='Merge', command=self.mergeVideos)
+        self.mergeButton.pack(side='left', ipady=40, padx=5)
+
         self.updateOutput()
+
+    def mergeVideosProcess(self):
+        allText = open('./../backend/all.txt', 'w')
+        for filename in os.listdir('./../backend/temp'):
+            allText.write(filename + '\n')
+        allText.close()
+
+        os.system('concatvids.sh all.txt')
+
+    def mergeVideos(self):
+        p = Process(target=self.mergeVideosProcess)
+        p.start()
 
     def playVideoProcess(self):
         filename = self.outputList.get(constants.ACTIVE)
@@ -170,7 +185,6 @@ class NBAVideoApp(Frame):
             print(cmd)
             os.system(cmd)
 
-        print("OMG EVERYTHING IS DOWNLOADED :)\n\n\n\n\n\n\n\n\n")
         urlFile.close()
 
     def stitchVideo(self):
