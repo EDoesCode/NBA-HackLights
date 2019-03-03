@@ -43,26 +43,37 @@ class NBAVideoApp(Frame):
         self.createWidgets()
 
         self.webscraper = NBAGameScraper()
-    
-    def createWidgets(self):
-        self.windowLabel = Label(self, text='NBA Highlight Reel', font=('Helvetica', 30))
-        self.windowLabel.pack(side='top')
-
-        self.datePicker = Calendar(self)
-        self.datePicker.pack(side='top')
 
         self.detailedGameList = []
-        self.gameScrollbar = Scrollbar(self)
+    
+    def createWidgets(self):
+        # Title Frame
+        self.titleFrame = Frame(self)
+        self.titleFrame.pack(side='top')
+        self.windowLabel = Label(self.titleFrame, text='NBA HACKLIGHTS 19', font=('Courier', 30))
+        self.windowLabel.pack(side='top', pady=50)
+
+        # Game Scraper Frame
+        self.gameScraperFrame = Frame(self)
+        self.gameScraperFrame.pack(side='top')
+        self.gameScrollbar = Scrollbar(self.gameScraperFrame)
         self.gameScrollbar.pack(side='right', fill=constants.Y)
-        self.gameList = Listbox(self, height=20, width=60, selectmode=constants.MULTIPLE,
+        self.gameList = Listbox(self.gameScraperFrame, height=20, width=60, selectmode=constants.MULTIPLE,
                             justify=constants.LEFT, yscrollcommand=self.gameScrollbar.set)
-        self.gameList.pack(side='top')
+        self.gameList.pack(side='right')
 
-        self.scrapeButton = Button(self, text="Grab Games", command=self.populateGameList)
-        self.scrapeButton.pack(side='top')
+        # Option Frame
+        self.optionFrame = Frame(self.gameScraperFrame)
+        self.optionFrame.pack(side='right',)
 
-        self.stitchButton = Button(self, text="Create Video", command=self.printGameList)
-        self.stitchButton.pack(side='top')
+        self.datePicker = Calendar(self.optionFrame)
+        self.datePicker.pack(side='top', pady=20, fill=constants.BOTH)
+
+        self.scrapeButton = Button(self.optionFrame, text="Grab Games", command=self.populateGameList)
+        self.scrapeButton.pack(side='left')
+
+        self.stitchButton = Button(self.optionFrame, text="Create Video", command=self.printGameList)
+        self.stitchButton.pack(side='right')
 
     def insertGame(self, game, month, day, year):
         gameObj = GameID(game, month, day, year)
