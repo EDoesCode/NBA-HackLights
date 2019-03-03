@@ -103,17 +103,20 @@ class NBAVideoApp(Frame):
         self.outputScrollbar = Scrollbar(self.outputFrame)
         self.outputScrollbar.pack(side='right', fill=constants.Y)
         self.outputList = Listbox(self.outputFrame, height=10, width=40, justify=constants.LEFT, yscrollcommand=self.outputScrollbar.set, font=('Helvetica', 14),
-                                    selectmode=constants.MULTIPLE)
+                                    selectmode=constants.SINGLE)
         self.outputList.pack(side='right')
 
         self.playVideoButton = Button(self.outputFrame, text='Play Highlight', command=self.playVideo)
         self.playVideoButton.pack(side='right', ipady=40, padx=5)
 
+        self.refreshButton = Button(self.outputFrame, text='Refresh', command=self.updateOutput)
+        self.refreshButton.pack(side='left', ipady=40, padx=5)
+
         self.updateOutput()
 
     def playVideoProcess(self):
-        for value in self.outputList.curselection():
-            print(value)
+        filename = self.outputList.get(constants.ACTIVE)
+        os.system('vlc ' + './../highlights/' + filename)
 
     def playVideo(self):
         p = Process(target=self.playVideoProcess)
@@ -123,7 +126,6 @@ class NBAVideoApp(Frame):
         self.outputList.delete(0, 'end')
         for outputFile in os.listdir('./../highlights'):
             self.outputList.insert(0, outputFile)
-        self.after(1000, self.updateOutput)
 
     def updateWorkingString(self):
         print(os.getpid())
@@ -151,6 +153,13 @@ class NBAVideoApp(Frame):
         values = [self.detailedGameList[idx] for idx in self.gameList.curselection()]
         for value in values:
             urlFile.write(value.url + '\n')
+        urlFile.close()
+
+        urlFile = open('./../backend/urls.txt', 'r')
+        os.chdir('./../')
+        for line in urlFile:
+            os.system('python3 ./backend/addressresolution.py ' + line)
+
         urlFile.close()
 
     def stitchVideo(self):
