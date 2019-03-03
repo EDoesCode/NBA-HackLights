@@ -42,13 +42,13 @@ class NBAGameScraper:
         requestURL += str(m) + '&day=' + str(d) + '&year=' + str(y)
         page = requests.get(requestURL)
         pageContent = BeautifulSoup(page.content, 'html.parser')
-        return cont.find_all(class_='teams')
+        return pageContent.find_all(class_='teams')
 
-    def createMatchList(self, pageContent):
+    def createMatchList(self, games):
         matchList = []
         for game in games:
             gameText = game.getText()
-            teams = getTeams(gameText)
+            teams = self.getTeams(gameText)
         matchList.append(teams)
         return matchList
 
@@ -59,8 +59,8 @@ class NBAGameScraper:
         for replacementKey in replacements:
             gameText = gameText.replace(replacementKey, replacements[replacementKey])
         gameText = gameText.split()
-        homeTeam = NBADictionary[gameText[0]]
-        awayTeam = NBADictionary[gameText[3]]
+        homeTeam = self.NBADictionary[gameText[0]]
+        awayTeam = self.NBADictionary[gameText[3]]
         return homeTeam + awayTeam
 
     def makeURL(self, date, teams):
