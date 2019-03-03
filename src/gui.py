@@ -50,7 +50,7 @@ class NBAVideoApp(Frame):
         # Title Frame
         self.titleFrame = Frame(self)
         self.titleFrame.pack(side='top')
-        self.windowLabel = Label(self.titleFrame, text='NBA HACKLIGHTS 19', font=('Courier', 30))
+        self.windowLabel = Label(self.titleFrame, text='NBA HACKLIGHTS 19', font=('Impact', 30))
         self.windowLabel.pack(side='top', pady=50)
 
         # Game Scraper Frame
