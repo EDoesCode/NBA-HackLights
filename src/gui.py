@@ -170,6 +170,7 @@ class NBAVideoApp(Frame):
             print(cmd)
             os.system(cmd)
 
+        print("OMG EVERYTHING IS DOWNLOADED :)\n\n\n\n\n\n\n\n\n")
         urlFile.close()
 
     def stitchVideo(self):
