@@ -5,8 +5,6 @@ from ttkcalendar import Calendar
 import os
 import time
 from multiprocessing import Process
-import cv2
-import numpy as np
 
 class GameID:
     def __init__(self, game, month, day, year):
