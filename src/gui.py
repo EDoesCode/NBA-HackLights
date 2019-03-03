@@ -2,6 +2,11 @@ from tkinter import *
 from webscraper import NBAGameScraper
 import re
 from ttkcalendar import Calendar
+import os
+import time
+from multiprocessing import Process
+import cv2
+import numpy as np
 
 class GameID:
     def __init__(self, game, month, day, year):
@@ -69,11 +74,60 @@ class NBAVideoApp(Frame):
         self.datePicker = Calendar(self.optionFrame)
         self.datePicker.pack(side='top', pady=20, fill=constants.BOTH)
 
-        self.scrapeButton = Button(self.optionFrame, text="Grab Games", command=self.populateGameList)
+        # Button Frame
+        self.buttonFrame = Frame(self.optionFrame)
+        self.buttonFrame.pack(side='top')
+
+        self.scrapeButton = Button(self.buttonFrame, text="Grab Games", command=self.populateGameList)
         self.scrapeButton.pack(side='left', ipady=20, ipadx=30)
 
-        self.stitchButton = Button(self.optionFrame, text="Create Video", command=self.printGameList)
+        self.stitchButton = Button(self.buttonFrame, text="Create Video", command=self.stitchVideo)
         self.stitchButton.pack(side='right', ipady=20, ipadx=30)
+
+        # Working Frame
+        self.workingFrame = Frame(self.optionFrame)
+        self.workingFrame.pack(side='top')
+
+        self.workingString = StringVar()
+        self.workingString.set('')
+        self.workingLabel = Label(self.workingFrame, textvariable=self.workingString, font=('Helvetica', 12))
+        self.workingLabel.pack(side='top', pady=7)
+
+        # Output Frame
+        self.outputFrame = Frame(self)
+        self.outputFrame.pack(side='top')
+
+        self.outputLabel = Label(self.outputFrame, text='OUTPUT DIRECTORY', font=('Helvetica', 15))
+        self.outputLabel.pack(side='top', pady=20)
+
+        self.outputScrollbar = Scrollbar(self.outputFrame)
+        self.outputScrollbar.pack(side='right', fill=constants.Y)
+        self.outputList = Listbox(self.outputFrame, height=10, width=40, justify=constants.LEFT, yscrollcommand=self.outputScrollbar.set, font=('Helvetica', 14),
+                                    selectmode=constants.MULTIPLE)
+        self.outputList.pack(side='right')
+
+        self.playVideoButton = Button(self.outputFrame, text='Play Highlight', command=self.playVideo)
+        self.playVideoButton.pack(side='right', ipady=40, padx=5)
+
+        self.updateOutput()
+
+    def playVideoProcess(self):
+        for value in self.outputList.curselection():
+            print(value)
+
+    def playVideo(self):
+        p = Process(target=self.playVideoProcess)
+        p.start()
+
+    def updateOutput(self):
+        self.outputList.delete(0, 'end')
+        for outputFile in os.listdir('./../highlights'):
+            self.outputList.insert(0, outputFile)
+        self.after(1000, self.updateOutput)
+
+    def updateWorkingString(self):
+        print(os.getpid())
+        self.after(5000, self.updateWorkingString)
 
     def insertGame(self, game, month, day, year):
         gameObj = GameID(game, month, day, year)
@@ -92,16 +146,23 @@ class NBAVideoApp(Frame):
         for game in games:
             self.insertGame(game, month, day, year)
 
-    def printGameList(self):
+    def stitchVideoProcess(self):
+        urlFile = open('./../backend/urls.txt', 'w')
         values = [self.detailedGameList[idx] for idx in self.gameList.curselection()]
         for value in values:
-            print(value.url)
+            urlFile.write(value.url + '\n')
+        urlFile.close()
+
+    def stitchVideo(self):
+        p = Process(target=self.stitchVideoProcess)
+        p.start()
+
         
 
 if __name__ == '__main__':
     root = Tk()
     root.title('NBA Highlight Reel')
-    root.geometry('1000x650')
+    root.geometry('1000x900')
 
     app = NBAVideoApp(master=root)
     app.mainloop()
