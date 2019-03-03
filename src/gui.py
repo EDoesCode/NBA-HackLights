@@ -157,6 +157,10 @@ class NBAVideoApp(Frame):
         urlFile = open('./../backend/urls.txt', 'r')
         os.chdir('./../')
         i = 1
+        name = 'output1'
+        cmd = 'python3 ./backend/addressresolution.py ' + urlFile[0] + ' ' + name
+        print(cmd)
+        os.system(cmd)
         for line in urlFile:
             line = line.replace('\n', '')
             name = 'output'
