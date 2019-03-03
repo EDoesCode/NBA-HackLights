@@ -156,11 +156,14 @@ class NBAVideoApp(Frame):
 
         urlFile = open('./../backend/urls.txt', 'r')
         os.chdir('./../')
+        i = 1
         for line in urlFile:
-            name = ''
-            for i in range(20):
-                name = random.choice(['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'])
-            os.system('python3 ./backend/addressresolution.py ' + line + ' ' + name)
+            name = 'output'
+            name += str(i)
+            i += 1
+            cmd = 'python3 ./backend/addressresolution.py ' + line + ' ' + name
+            print(cmd)
+            os.system(cmd)
 
         urlFile.close()
 
