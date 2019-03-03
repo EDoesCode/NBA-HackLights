@@ -16,6 +16,7 @@ fire_options.headless = True
 driver = webdriver.Firefox(options = fire_options)
 #driver.install_addon(cwd+"/ublock.xpi")
 url = sys.argv[1]
+name = sys.argv[2]
 driver.get(url)
 
 time.sleep(5)
@@ -50,5 +51,5 @@ with open('harfile') as fp:
             if (i["name"]).find("master.m3u8") >= 0:
                 st = (i["name"])
                 
-os.system("ffmpeg -i \""+st+"\" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 50 output.mp4")
+os.system("ffmpeg -i \""+st+"\" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 50 "+name+".mp4")
 
