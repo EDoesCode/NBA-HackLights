@@ -64,16 +64,16 @@ class NBAVideoApp(Frame):
 
         # Option Frame
         self.optionFrame = Frame(self.gameScraperFrame)
-        self.optionFrame.pack(side='right',)
+        self.optionFrame.pack(side='left', padx=20)
 
         self.datePicker = Calendar(self.optionFrame)
         self.datePicker.pack(side='top', pady=20, fill=constants.BOTH)
 
         self.scrapeButton = Button(self.optionFrame, text="Grab Games", command=self.populateGameList)
-        self.scrapeButton.pack(side='left')
+        self.scrapeButton.pack(side='left', ipady=20, ipadx=30)
 
         self.stitchButton = Button(self.optionFrame, text="Create Video", command=self.printGameList)
-        self.stitchButton.pack(side='right')
+        self.stitchButton.pack(side='right', ipady=20, ipadx=30)
 
     def insertGame(self, game, month, day, year):
         gameObj = GameID(game, month, day, year)
@@ -101,7 +101,7 @@ class NBAVideoApp(Frame):
 if __name__ == '__main__':
     root = Tk()
     root.title('NBA Highlight Reel')
-    root.geometry('800x800')
+    root.geometry('1000x650')
 
     app = NBAVideoApp(master=root)
     app.mainloop()
