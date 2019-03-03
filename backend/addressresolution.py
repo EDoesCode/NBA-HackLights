@@ -11,7 +11,6 @@ import re
 import os 
 import subprocess
 
-
 fire_options = webdriver.FirefoxOptions()
 fire_options.headless = True
 driver = webdriver.Firefox(options = fire_options)
