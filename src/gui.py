@@ -50,7 +50,7 @@ class NBAVideoApp(Frame):
         # Title Frame
         self.titleFrame = Frame(self)
         self.titleFrame.pack(side='top')
-        self.windowLabel = Label(self.titleFrame, text='NBA HACKLIGHTS 19', font=('Impact', 30))
+        self.windowLabel = Label(self.titleFrame, text='NBA HACKLIGHTS 19', font=('Comic Sans', 30))
         self.windowLabel.pack(side='top', pady=50)
 
         # Game Scraper Frame
@@ -59,7 +59,7 @@ class NBAVideoApp(Frame):
         self.gameScrollbar = Scrollbar(self.gameScraperFrame)
         self.gameScrollbar.pack(side='right', fill=constants.Y)
         self.gameList = Listbox(self.gameScraperFrame, height=20, width=60, selectmode=constants.MULTIPLE,
-                            justify=constants.LEFT, yscrollcommand=self.gameScrollbar.set)
+                            justify=constants.LEFT, yscrollcommand=self.gameScrollbar.set, font=('Comic Sans', 14))
         self.gameList.pack(side='right')
 
         # Option Frame
