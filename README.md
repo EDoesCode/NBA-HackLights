@@ -1,3 +1,3 @@
 # NBA-HackLights
-Stitches together highlights from a selected day for easy viewings.
-Sean DOES know what he is doing.
+
+Stitches together NBA highlights from a selected day for easy viewings. Created at UCF's KnightHacks 2019 Hackathon.
